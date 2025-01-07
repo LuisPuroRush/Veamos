@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Content</title>
+    <title>Responsive Content</title>
     <style>
         * {
             margin: 0;
@@ -20,29 +20,42 @@
         }
 
         .content {
-            width: 810px; /* Ancho para relación 9:16 */
-            height: 1440px; /* Alto para relación 9:16 */
-            background-color: white; /* Puedes cambiar el color de fondo aquí */
+            aspect-ratio: 9 / 16;
+            width: 90%; /* Ajustable según el contenedor */
+            max-width: 810px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Para un efecto de luz */
+            color: white;
+            font-family: Arial, sans-serif;
         }
 
-        .content-text {
-            font-family: Arial, sans-serif;
-            color: black; /* Cambia el color del texto si lo necesitas */
-            font-size: 20px;
-            text-align: center;
+        .square:nth-child(even) {
+            background-color: blue;
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <div class="content-text">
-            <!-- Aquí puedes añadir lo que necesites dentro del centro -->
-            <p>Tu contenido va aquí.</p>
-        </div>
+        <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div>
+        <div class="square">4</div>
+        <div class="square">5</div>
+        <div class="square">6</div>
     </div>
 </body>
 </html>
