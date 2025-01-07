@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .content {
+            width: 648px;
+            height: 1152px;
+            background-color: white; /* Puedes cambiar el color de fondo aquí */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Para un efecto de luz */
+        }
+
+        .content-text {
+            font-family: Arial, sans-serif;
+            color: black; /* Cambia el color del texto si lo necesitas */
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="content-text">
+            <!-- Aquí puedes añadir lo que necesites dentro del centro -->
+            <p>Tu contenido va aquí.</p>
+        </div>
+    </div>
+</body>
+</html>
